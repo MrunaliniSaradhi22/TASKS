@@ -11,3 +11,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+html, body, #app, #app>div {
+  height: 100%
+}
+
+@media only screen and (max-width:1020px){
+  .profile{
+    display: flex !important;
+    margin-left:10px !important
+  }
+  .logout{
+    margin-right: 10px !important;
+  }
+  .top{
+    display: block !important;
+  }
+  .top-card{
+    width:95% !important;
+  }
+  .bottom-heading{
+    display: block !important;
+  }
+.bottom-heading-right{
+  display: block !important;
+}
+.bottom-heading-search{
+  margin-bottom: 10px !important;
+}
+.bottom-card{
+  height: fit-content !important;
+}
+.modal{
+  top: 0 !important;
+}
+}

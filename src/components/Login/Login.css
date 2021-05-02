@@ -1,0 +1,154 @@
+.login-body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #fbfafa;
+    overflow: auto;
+}
+
+.login-content {
+    padding: 3% 0 0;
+}
+
+
+
+.login-card {
+    background-color: #fff;
+    margin: 3.6% auto 0;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 12px;
+    opacity: 1;
+    width: 296px;
+    height: 249px;
+    text-align: left;
+    /* display: flex;
+    flex-direction: column; */
+}
+.signIn {
+    letter-spacing: 0px;
+    color: #537178;
+    opacity: 1;
+    margin: 0% 10% 4.6%;
+    padding-top: 3%;
+    font-size: 24px;
+}
+
+.input-box {
+    margin: 0px 10% 4.2%;
+    border-radius: 4px;
+    display: flex;
+    background: #ededed;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+}
+.input-box.err {
+    border-color: #f0525a;
+    position: relative;
+}
+.box-mgb {
+    margin-bottom: 0px;
+}
+.box-mgt {
+    margin-top: 6%;
+    margin-bottom: 4%;
+}
+.login-card .input-box.last {
+    margin-bottom: 0;
+}
+.input-box .txt-input {
+    width: 100%;
+    border: none;
+    background: #EEF1F8;
+    font-size: 14px;
+    color:#7A7D7E;
+    outline: none;
+    border-width: 0;
+    height: 40px;
+    border-radius: 8px;
+    text-indent: 10px;
+    letter-spacing: 0px;
+}
+
+
+.login-submit {
+    margin: 3.9% 10% 4.2%;
+    background-color: #5285EC;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 8px;
+    padding: 3.2% 0 3.4%;
+    width: 80%;
+    position: relative;
+    height: 40px;
+    font-weight: normal;
+}
+
+.login-submit:hover {
+    opacity: 1;
+}
+
+.loading.log {
+    position: absolute;
+    width: 100%;
+    top: -1px;
+}
+
+.disabled {
+    opacity: 0.7;
+}
+.disabled:hover {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.error_msg {
+    color: #f0525a;
+    position: absolute;
+    font-size: 12px;
+    text-align: right;
+    margin-top: 28px;
+    left: 10px;
+    right: 10px;
+}
+
+
+
+
+@media only screen and (min-height: 780px) {
+    .login-content {
+        padding: 5% 0 0;
+    }
+}
+@media only screen and (max-width: 780px) {
+    .login-content {
+        padding: 10% 0 0;
+    }
+    .login-card {
+        min-width: unset;
+        width: 44%;
+    }
+    .input-box .txt-input {
+        font-size: 16px;
+    }
+    
+}
+
+@media only screen and (max-width: 420px) {
+    .login-content {
+        padding: 10% 0 0;
+    }
+    .login-card {
+        min-width: unset;
+        width: 94%;
+    }
+    .input-box .txt-input {
+        font-size: 14px;
+    }
+    
+}
+
+

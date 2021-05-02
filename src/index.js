@@ -3,11 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import { createBrowserHistory } from 'history';
+import { Router, Route, Switch } from 'react-router-dom';
+import Dashboard from './components/Dashboard/Dashboard';
+const hist = createBrowserHistory();
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router history={hist}>
+    <Switch>
+      <Route path="/" component={App} exact={true} />
+      <Route path="/dashboard" component={Dashboard} exact={true} />
+    </Switch>
+  </Router>
+  ,
   document.getElementById('root')
 );
 
