@@ -169,6 +169,7 @@ export default function Dashboard(props) {
                     setSuccessAlert(true);
                     setDisplayAddTask(false);
                     setTaskName('');
+                    getDashboard();
                 }
                 else {
                     setError(data.msg);
@@ -196,6 +197,7 @@ export default function Dashboard(props) {
             .then(data => {
                 if (data.task) {
                     getTasks();
+                    getDashboard();
                     setMsg(data.msg);
                     setTitle('Success');
                     setStatus('success');
